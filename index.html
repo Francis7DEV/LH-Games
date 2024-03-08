@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Franciel Moreira de França" />
+      <meta
+         name="description"
+         content="Desenvolvimento da página Home e Login do site proposto."
+      />
+      <title>LH Games</title>
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+   </head>
+   <body>
+      <head>
+         <!-- Navegação: -->
+         <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+               <!-- Logo: -->
+               <a href="/index.html" class="navbar-brand">
+                  <img src="/img/logo.png" alt="Logo LH Games" id="logo" />
+               </a>
+               <!-- Menu hambúrguer: -->
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarlinks"
+                  aria-controls="navbarlinks"
+                  aria-expanded="false"
+                  aria-label="Toggle Navigation"
+               >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- Itens que colapsam: -->
+               <div class="collapse navbar-collapse" id="navbarlinks">
+                  <!-- Container para centralizar a caixa de pesquisa: -->
+                  <div class="container-fluid" id="search-container">
+                     <!-- Caixa de pesquisa: -->
+                     <form class="d-flex" role="search" id="search-box">
+                        <input
+                           class="form-control me-2"
+                           type="search"
+                           placeholder="O que deseja buscar?"
+                           aria-label="Buscar"
+                        />
+                        <!-- Botão pesquisar: -->
+                        <button class="btn" type="submit" id="btn">
+                           <img
+                              src="/img/search.svg"
+                              alt="Botão buscar"
+                              id="btn-icon"
+                           />
+                        </button>
+                     </form>
+                  </div>
+                  <!-- Links da barra de navegação: -->
+                  <div class="navbar-nav">
+                     <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="/index.html"
+                     >
+                        Promoções
+                     </a>
+                     <a class="nav-link" href="#">Console</a>
+                     <a class="nav-link" href="#">Jogos</a>
+                     <a class="nav-link" href="/login.html">Login</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </head>
+      <main>
+         <!-- Conteúdo: -->
+      </main>
+      <footer>
+         <!-- Rodapé: -->
+         <p>Desenvolvido por LH Games</p>
+      </footer>
+   </body>
+   <script type="text/javascript" src="/js/script.js"></script>
+   <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+   <script src="/js/jquery-3.7.1.min.js"></script>
+</html>
