@@ -31,6 +31,28 @@ body {
    margin-right: 20px;
 }
 
+#login {
+   color: #2e4057;
+   background-color: #ebf5ff;
+   padding: 7px 20px;
+   transition: 0.5s;
+}
+
+#login:hover {
+   color: #ebf5ff;
+   background-color: #132d3c;
+}
+
+@media (max-width: 768px) {
+   #login {
+      color: #2e4057;
+      background-color: #ebf5ff;
+      padding: 7px 20px;
+      width: 86px;
+      margin-bottom: 12px;
+   }
+}
+
 #btn-icon {
    color: white;
    margin: 0;
