@@ -1,13 +1,42 @@
-/* Barra de navegação: */
-#logo {
-   height: 75px;
+/* ESTILOS GERAIS: */
+body {
+   background-color: #fafdff;
+}
+/* BARRA DE NAVEGAÇÃO: */
+.navbar {
+   background-color: #040910;
 }
 
-#navbarlinks {
-   justify-content: right;
+#logo {
+   width: 70px;
+}
+.navbar-toggler {
+   border: 0;
+}
+
+.navbar-toggler:focus {
+   box-shadow: none;
+   border: 1px #fafdff solid;
+   border-radius: 50px;
+}
+
+#navbartoggler-icon {
+   width: 30px;
+}
+
+.nav-link {
+   color: #ebf5ff;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+   margin-right: 20px;
+}
+
+#active {
+   color: #99ccff;
 }
 
 #btn-icon {
+   color: white;
    margin: 0;
    padding: 0;
    width: 30px;

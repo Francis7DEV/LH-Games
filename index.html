@@ -9,13 +9,19 @@
          content="Desenvolvimento da página Home e Login do site proposto."
       />
       <title>LH Games</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Alike&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"
+      />
       <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
       <link rel="stylesheet" href="/css/style.css" />
    </head>
    <body>
       <head>
          <!-- Navegação: -->
-         <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+         <nav class="navbar navbar-expand-md" data-bs-theme="dark">
             <div class="container-fluid">
                <!-- Logo: -->
                <a href="/index.html" class="navbar-brand">
@@ -31,14 +37,15 @@
                   aria-expanded="false"
                   aria-label="Toggle Navigation"
                >
-                  <span class="navbar-toggler-icon"></span>
+                  <img src="/img/menu.svg" id="navbartoggler-icon" />
                </button>
                <!-- Itens que colapsam: -->
                <div class="collapse navbar-collapse" id="navbarlinks">
                   <!-- Links da barra de navegação: -->
                   <div class="navbar-nav">
                      <a
-                        class="nav-link active"
+                        class="nav-link"
+                        id="active"
                         aria-current="page"
                         href="/index.html"
                      >
