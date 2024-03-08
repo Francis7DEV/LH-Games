@@ -8,15 +8,12 @@
 }
 
 #btn-icon {
-   height: 35px;
-   padding: 0px;
+   margin: 0;
+   padding: 0;
+   width: 30px;
 }
 
 #btn {
    margin: 0;
    padding: 0;
-}
-
-#search-box {
-   width: 300px;
 }
