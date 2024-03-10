@@ -45,7 +45,7 @@ body {
    color: #2e4057;
    background-color: #ebf5ff;
    padding: 7px 20px;
-   transition: 0.5s;
+   transition: 0.3s;
 }
 
 #login:hover {
@@ -77,6 +77,57 @@ body {
 
 /* Banner: */
 
-#first-banner img {
+.first-banner {
+   background-color: #2e4057;
+   padding: 70px 0px;
+   gap: 70px;
+}
+
+.first-banner .col-6 {
+   align-content: space-between;
+   justify-items: center;
+}
+
+.first-banner img {
    width: 530px;
+   border-radius: 2px;
+}
+
+.first-banner h2 {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+   color: #d6ebff;
+   text-align: center;
+}
+
+.first-banner p {
+   font-family: "Alike", serif;
+   font-size: 18;
+   color: #d6ebff;
+   text-indent: 2rem;
+   margin-bottom: 0px;
+}
+
+.first-banner .btn {
+   font-family: "Montserrat", sans-serif;
+   font-weight: bold;
+   font-size: 25;
+   padding: 10px 20px;
+   border-radius: 0;
+   color: #ebf5ff;
+   background-color: #005caa;
+   background-size: 210%;
+   background-image: linear-gradient(
+      to right,
+      #005caa 0%,
+      #01276f 40%,
+      #040910 50%,
+      #00213d 80%,
+      #005caa 110%
+   );
+   transition: 0.5s;
+}
+
+.first-banner .btn:hover {
+   background-position: right;
 }
