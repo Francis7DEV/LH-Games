@@ -8,6 +8,7 @@
 
 img {
    width: 100%;
+   border-radius: 4px;
 }
 
 a {
@@ -29,32 +30,6 @@ a {
 
 /* BEM: */
 
-.navbar {
-   background-color: #040910;
-}
-
-.navbar__logo {
-   width: 75px;
-   margin: 2px 8px;
-}
-
-.navbar__toggler {
-   width: 50px;
-   border-radius: 50px;
-   border: #ebf5ff 0.2px solid;
-}
-
-.navbar__link {
-   color: #ebf5ff;
-   font-family: "Montserrat", sans-serif;
-   font-size: 20;
-   font-weight: 500;
-}
-
-.navbar__link:hover {
-   text-decoration: underline;
-}
-
 .mybutton {
    color: #2e4057;
    background-color: #ebf5ff;
@@ -73,6 +48,90 @@ a {
    background-color: #2e4057;
 }
 
+.title {
+   font-size: 28px;
+   font-family: "Montserrat", sans-serif;
+}
+
+.text {
+   font-family: "Alike", serif;
+   font-size: 1rem;
+}
+
 .icon {
    width: 30px;
+}
+
+.navbar {
+   background-color: #040910;
+}
+
+.navbar__logo {
+   width: 75px;
+   margin: 2px 8px;
+}
+
+.navbar__toggler {
+   width: 50px;
+   border-radius: 50px;
+   border: #ebf5ff 0.2px solid;
+}
+
+.navbar__link {
+   color: #ebf5ff;
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.navbar__link:hover {
+   text-decoration: underline;
+}
+
+.navbar__button {
+   color: #2e4057;
+}
+
+.banner {
+   background-color: #2e4057;
+   padding: 5vw 7vw;
+}
+
+.banner__sub {
+   justify-items: center;
+   margin: 0;
+   gap: 4vw;
+}
+
+.banner__img {
+   max-width: 560px;
+}
+
+.banner__col2 {
+   justify-items: center;
+   gap: 10px;
+}
+
+.banner__title {
+   color: #d6ebff;
+   font-weight: 600;
+}
+.banner__text {
+   color: #ebf5ff;
+   text-indent: 2rem;
+}
+
+@media (max-width: 991.5px) {
+   .banner__sub {
+      gap: 7vw;
+   }
+
+   .banner__img {
+      max-width: none;
+      width: 75vw;
+   }
+
+   .banner__col2 {
+      width: 75vw;
+   }
 }
