@@ -6,6 +6,10 @@
    gap: 0;
 }
 
+body {
+   background-color: #fafdff;
+}
+
 img {
    width: 100%;
    border-radius: 4px;
