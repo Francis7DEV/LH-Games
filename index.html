@@ -21,11 +21,11 @@
    <body>
       <head>
          <!-- Navegação: -->
-         <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+         <nav class="navbar navbar-expand-md box" data-bs-theme="dark">
             <div class="container-fluid">
                <!-- Logo: -->
-               <a href="/index.html" class="navbar-brand">
-                  <img src="/img/logo.png" alt="Logo LH Games" id="logo" />
+               <a class="navbar-brand logo me-md-4" href="/index.html">
+                  <img src="/img/logo.png" alt="Logo LH Games" />
                </a>
                <!-- Menu hambúrguer: -->
                <button
@@ -37,21 +37,23 @@
                   aria-expanded="false"
                   aria-label="Toggle Navigation"
                >
-                  <img src="/img/menu.svg" id="navbartoggler-icon" />
+                  <img src="/img/menu.svg" />
                </button>
                <!-- Itens que colapsam: -->
                <div class="collapse navbar-collapse" id="navbarlinks">
                   <!-- Links da barra de navegação: -->
-                  <div class="navbar-nav">
+                  <div class="navbar-nav gap-md-4 align-items-center">
                      <a class="nav-link" aria-current="page" href="/index.html">
                         Promoções
                      </a>
                      <a class="nav-link" href="#">Console</a>
                      <a class="nav-link" href="#">Jogos</a>
-                     <a class="nav-link" id="login" href="/login.html">Login</a>
+                     <a class="nav-link" href="/login.html">
+                        <button class="btn mybtn">Login</button>
+                     </a>
                   </div>
                   <!-- Caixa de pesquisa: -->
-                  <form class="d-flex ms-auto" role="search" id="search-box">
+                  <form class="d-flex ms-auto" role="search">
                      <input
                         class="form-control me-2"
                         type="search"
@@ -59,12 +61,8 @@
                         aria-label="Buscar"
                      />
                      <!-- Botão pesquisar: -->
-                     <button class="btn" type="submit" id="btn">
-                        <img
-                           src="/img/search.svg"
-                           alt="Botão buscar"
-                           id="btn-icon"
-                        />
+                     <button class="btn" type="submit">
+                        <img src="/img/search.svg" alt="Botão buscar" />
                      </button>
                   </form>
                </div>
@@ -73,15 +71,17 @@
       </head>
       <main>
          <!-- Banner inicial: -->
-         <div class="container-fluid banner">
-            <div class="d-grid d-xl-flex justify-content-center first-banner">
+         <div class="container-fluid box">
+            <div class="d-grid d-xl-flex justify-content-center">
                <!-- Banner img: -->
                <div>
                   <img src="/img/banner.png" alt="Banner" />
                </div>
                <!-- Descrição: -->
-               <div class="d-grid col-6">
-                  <h2>Lorem ipsum dolor sit amet</h2>
+               <div
+                  class="d-grid col-6 align-items-center box box--transparent box--j-center"
+               >
+                  <h2 class="t2">Lorem ipsum dolor sit amet</h2>
                   <div>
                      <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -106,7 +106,13 @@
                      </p>
                   </div>
                   <!-- Botão: -->
-                  <a href="#" class="btn">SAIBA MAIS</a>
+                  <a href="#">
+                     <button
+                        class="btn mybtn mybtn--blue mybtn--width mybtn--upper"
+                     >
+                        Saiba mais
+                     </button>
+                  </a>
                </div>
             </div>
          </div>
