@@ -1,7 +1,25 @@
-/* Geral: */
+/* Estilos gerais: */
+
 * {
-   padding: 0;
    margin: 0;
+   padding: 0;
+   gap: 0;
+}
+
+img {
+   width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* Bootstrap-rewrite: */
+
+.navbar-brand {
+   margin: 0;
+   padding: 0;
+   gap: 0;
 }
 
 .btn {
@@ -9,113 +27,52 @@
    padding: 0;
 }
 
-a {
-   line-height: 0.8rem;
+/* BEM: */
+
+.navbar {
+   background-color: #040910;
 }
 
-img {
-   width: 100%;
-   border-radius: 4px;
+.navbar__logo {
+   width: 75px;
+   margin: 2px 8px;
 }
 
-/* Classes mais genéricas: */
-
-.logo {
-   width: 70px;
+.navbar__toggler {
+   width: 50px;
+   border-radius: 50px;
+   border: #ebf5ff 0.2px solid;
 }
 
-.nav-link {
+.navbar__link {
    color: #ebf5ff;
    font-family: "Montserrat", sans-serif;
+   font-size: 20;
    font-weight: 500;
 }
 
-.nav-link--active {
-   color: #cfdefc;
-   font-weight: 600;
+.navbar__link:hover {
+   text-decoration: underline;
+}
+
+.mybutton {
+   color: #2e4057;
+   background-color: #ebf5ff;
+   border-radius: 3px;
+   padding: 5px 12px;
+   transition: 0.3s;
+}
+
+.mybutton:hover {
+   color: #ebf5ff;
+   background-color: #2e4057;
+}
+
+.mybutton:focus {
+   color: #ebf5ff;
+   background-color: #2e4057;
 }
 
 .icon {
    width: 30px;
-}
-
-.box {
-   background-color: #040910;
-}
-
-.mybtn {
-   padding: 5px 18px;
-   color: #2e4057;
-   font-family: "Montserrat", sans-serif;
-   font-weight: 600;
-   background-color: #ebf5ff;
-   transition: 0.3s;
-}
-
-.mybtn:hover {
-   color: #ebf5ff;
-   background-color: #2e4057;
-}
-
-.t2 {
-   font-family: "Montserrat", sans-serif;
-   color: #d6ebff;
-   font-weight: 600;
-   font-size: 32;
-}
-
-.paragraph {
-   font-family: "Alike", serif;
-   font-size: 16;
-   color: #ebf5ff;
-}
-
-/* Customizações: */
-.box--transparent {
-   background-color: transparent;
-}
-
-.box--j-center {
-   justify-items: center;
-}
-
-.box--gap {
-   gap: 75px;
-}
-
-.box--secondary {
-   background-color: #2e4057;
-}
-
-.mybtn--blue {
-   color: #ebf5ff;
-   background-color: #005caa;
-}
-
-.mybtn--blue:hover {
-   color: #bee1fb;
-   background-color: #013e99;
-}
-
-.mybtn--upper {
-   text-transform: uppercase;
-}
-
-/* Media querrys: */
-
-@media (max-width: 1320px) {
-   .banner-img {
-      width: 536px;
-   }
-}
-
-@media (max-width: 1199.5px) {
-   .banner-img {
-      width: 75vw;
-   }
-
-   .box--gap {
-      gap: 0px;
-      margin: 0px;
-   }
 }
