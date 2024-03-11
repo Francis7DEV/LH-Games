@@ -42,13 +42,13 @@
                <!-- Itens que colapsam: -->
                <div class="collapse navbar-collapse" id="navbarlinks">
                   <!-- Links da barra de navegação: -->
-                  <div class="navbar-nav gap-md-4 align-items-center">
-                     <a class="nav-link" aria-current="page" href="/index.html">
+                  <div class="navbar-nav gap-md-4">
+                     <a class="nav-link my-auto" href="/index.html">
                         Promoções
                      </a>
-                     <a class="nav-link" href="#">Console</a>
-                     <a class="nav-link" href="#">Jogos</a>
-                     <a class="nav-link" href="/login.html">
+                     <a class="nav-link my-auto" href="#">Console</a>
+                     <a class="nav-link my-auto" href="#">Jogos</a>
+                     <a class="nav-link my-auto" href="/login.html">
                         <button class="btn mybtn">Login</button>
                      </a>
                   </div>
@@ -61,7 +61,7 @@
                         aria-label="Buscar"
                      />
                      <!-- Botão pesquisar: -->
-                     <button class="btn" type="submit">
+                     <button class="btn icon ms-1" type="submit">
                         <img src="/img/search.svg" alt="Botão buscar" />
                      </button>
                   </form>
@@ -71,19 +71,23 @@
       </head>
       <main>
          <!-- Banner inicial: -->
-         <div class="container-fluid box">
-            <div class="d-grid d-xl-flex justify-content-center">
+         <div
+            class="container-fluid box box--secondary box box--gap p-0 p-xl-5"
+         >
+            <div
+               class="d-grid d-xl-flex justify-content-center box--gap box--j-center"
+            >
                <!-- Banner img: -->
                <div>
-                  <img src="/img/banner.png" alt="Banner" />
+                  <img class="banner-img" src="/img/banner.png" alt="Banner" />
                </div>
                <!-- Descrição: -->
                <div
-                  class="d-grid col-6 align-items-center box box--transparent box--j-center"
+                  class="d-grid col-xl-6 m-5 m-xl-0 align-content-between box--j-center"
                >
                   <h2 class="t2">Lorem ipsum dolor sit amet</h2>
                   <div>
-                     <p>
+                     <p class="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Rem id ut fuga ullam recusandae laborum nostrum. Quidem
                         doloribus quaerat ex harum fugit, repudiandae fugiat
@@ -93,7 +97,7 @@
                         error veniam accusamus nemo odit natus. Saepe illo ab
                         repellat maiores incidunt.
                      </p>
-                     <p>
+                     <p class="paragraph">
                         Recusandae, commodi ipsam? Vero expedita earum officia
                         impedit quae ullam minima suscipit molestias,
                         distinctio, natus, eveniet laborum nisi sequi. Illum

@@ -4,18 +4,39 @@
    margin: 0;
 }
 
+.btn {
+   margin: 0;
+   padding: 0;
+}
+
 a {
    line-height: 0.8rem;
 }
 
 img {
    width: 100%;
+   border-radius: 4px;
 }
 
 /* Classes mais genéricas: */
 
 .logo {
    width: 70px;
+}
+
+.nav-link {
+   color: #ebf5ff;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 500;
+}
+
+.nav-link--active {
+   color: #cfdefc;
+   font-weight: 600;
+}
+
+.icon {
+   width: 30px;
 }
 
 .box {
@@ -28,6 +49,12 @@ img {
    font-family: "Montserrat", sans-serif;
    font-weight: 600;
    background-color: #ebf5ff;
+   transition: 0.3s;
+}
+
+.mybtn:hover {
+   color: #ebf5ff;
+   background-color: #2e4057;
 }
 
 .t2 {
@@ -37,6 +64,12 @@ img {
    font-size: 32;
 }
 
+.paragraph {
+   font-family: "Alike", serif;
+   font-size: 16;
+   color: #ebf5ff;
+}
+
 /* Customizações: */
 .box--transparent {
    background-color: transparent;
@@ -44,12 +77,45 @@ img {
 
 .box--j-center {
    justify-items: center;
-   /* align-items: center; */
+}
+
+.box--gap {
+   gap: 75px;
+}
+
+.box--secondary {
+   background-color: #2e4057;
 }
 
 .mybtn--blue {
+   color: #ebf5ff;
+   background-color: #005caa;
+}
+
+.mybtn--blue:hover {
+   color: #bee1fb;
+   background-color: #013e99;
 }
 
 .mybtn--upper {
    text-transform: uppercase;
+}
+
+/* Media querrys: */
+
+@media (max-width: 1320px) {
+   .banner-img {
+      width: 536px;
+   }
+}
+
+@media (max-width: 1199.5px) {
+   .banner-img {
+      width: 75vw;
+   }
+
+   .box--gap {
+      gap: 0px;
+      margin: 0px;
+   }
 }
