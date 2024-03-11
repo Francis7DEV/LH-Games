@@ -33,6 +33,7 @@ a {
 .mybutton {
    color: #2e4057;
    background-color: #ebf5ff;
+   font-family: "Montserrat", sans-serif;
    border-radius: 3px;
    padding: 5px 12px;
    transition: 0.3s;
@@ -46,6 +47,10 @@ a {
 .mybutton:focus {
    color: #ebf5ff;
    background-color: #2e4057;
+}
+
+.mybutton--upper {
+   text-transform: uppercase;
 }
 
 .title {
@@ -115,10 +120,29 @@ a {
 .banner__title {
    color: #d6ebff;
    font-weight: 600;
+   text-align: center;
 }
 .banner__text {
    color: #ebf5ff;
    text-indent: 2rem;
+}
+
+.banner__button {
+   font-weight: bold;
+   font-size: 16px;
+   color: #bee1fb;
+   background-color: #013e99;
+   padding: 7px 12px;
+}
+
+.banner__button:hover {
+   background-color: #001958;
+   color: #d4f2fb;
+}
+
+.banner__button:focus {
+   background-color: #001958;
+   color: #d4f2fb;
 }
 
 @media (max-width: 991.5px) {
