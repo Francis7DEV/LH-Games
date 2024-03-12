@@ -3,12 +3,6 @@ const swiper = new Swiper(".swiper", {
 
    centered: true,
 
-   slidesPerView: 3,
-
-   slidesPerGroup: 2,
-
-   spaceBetween: 10,
-
    pagination: {
       el: ".swiper-pagination",
    },
@@ -20,5 +14,21 @@ const swiper = new Swiper(".swiper", {
 
    autoplay: {
       delay: 3000,
+   },
+
+   breakpoints: {
+      600: {
+         slidesPerView: 2,
+         slidesPerGroup: 2,
+         spaceBetween: 10,
+      },
+
+      900: {
+         slidesPerView: 3,
+
+         slidesPerGroup: 2,
+
+         spaceBetween: 10,
+      },
    },
 });
