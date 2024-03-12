@@ -17,6 +17,7 @@ img {
 
 a {
    text-decoration: none;
+   color: inherit;
 }
 
 /* Bootstrap-rewrite: */
@@ -237,7 +238,77 @@ a {
    color: #d4f2fb;
 }
 
+.footer {
+   margin-top: 100px;
+   font-family: "Montserrat", sans-serif;
+   background-color: #001629;
+   padding: 25px 25px 5px 25px;
+   color: #ebf5ff;
+}
+
+.footer__itens {
+   gap: 25px;
+}
+
+.footer__logo {
+   width: 50px;
+}
+
+.footer__title {
+   margin-bottom: 10px;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+.footer__item {
+   margin-bottom: 20px;
+}
+
+.footer__item--last {
+   margin: 0;
+}
+
+.footer__text {
+   margin-bottom: 5px;
+   font-weight: 600;
+   font-size: 14px;
+}
+
+.footer__text--social {
+   margin-bottom: 25px;
+}
+
+.footer__text--last {
+   margin: 0;
+}
+
+.footer__social {
+   display: grid;
+   justify-content: right;
+}
+
+.footer__social1 {
+   gap: 25px;
+   margin-right: 25px;
+   display: flex;
+}
+
+.footer__socialimg {
+   width: 36px;
+}
+
+.footer__credits {
+   font-weight: bold;
+   font-size: 14px;
+   margin-bottom: 1px;
+}
+
+.footer__social2 {
+   margin-top: 25px;
+}
+
 /* Media querrys: */
+
 @media (max-width: 991.5px) {
    .banner__sub {
       gap: 7vw;
@@ -250,6 +321,17 @@ a {
 
    .banner__col2 {
       width: 75vw;
+   }
+}
+
+@media (max-width: 800px) {
+   .footer {
+      padding-bottom: 1px;
+   }
+
+   .footer__credits {
+      margin-top: 50px;
+      margin-bottom: 0;
    }
 }
 
@@ -287,6 +369,17 @@ a {
    .swiper {
       margin-bottom: 50px;
    }
+
+   .footer__social1 {
+      gap: 20px;
+      margin-right: 0px;
+      display: grid;
+   }
+
+   .footer__social2 {
+      visibility: hidden;
+      display: none;
+   }
 }
 
 @media (max-width: 599.5px) {
@@ -296,5 +389,9 @@ a {
 
    .card-img-top {
       height: calc(70vw / 1.3);
+   }
+
+   .footer {
+      margin-top: 50px;
    }
 }
