@@ -163,3 +163,12 @@ a {
       width: 75vw;
    }
 }
+
+.swiper {
+   margin: 2vw 5px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   --swiper-navigation-color: #ebf5ff;
+}
